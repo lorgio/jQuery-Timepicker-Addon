@@ -21,11 +21,13 @@ module.exports = function(grunt) {
 					//{ src: 'src/index.html', dest: 'dist/index.html' },
 					{ src: 'src/<%= pkg.name %>.css', dest: 'dist/<%= pkg.name %>.css' },
 					{ src: 'src/jquery-ui-sliderAccess.js', dest: 'dist/jquery-ui-sliderAccess.js' },
+					{ src: 'src/<%= pkg.name %>.css', dest: 'vendor/assets/stylesheets/jquery-ui-timepicker/<%= pkg.name %>.css' },
+					{ src: 'src/jquery-ui-sliderAccess.js', dest: 'vendor/assets/javascripts/jquery-ui-timepicker/jquery-ui-sliderAccess.js' },
 					{ src: 'src/i18n/jquery-ui-timepicker-*.js', dest: 'dist/i18n/', expand:true, flatten: true }
 				]
 			}
 		},
-		concat: {	
+		concat: {
 			dist: {
 				options: {
 					banner: '<%= banner %>',
