@@ -17,22 +17,22 @@ I recommend getting the eBook [Handling Time](https://sellfy.com/p/8gxZ) as it h
 
 ### Rails 3.1 or greater (with asset pipeline *enabled*)
 
-The jquery and jquery-ujs files will be added to the asset pipeline and available for you to use. If they're not already in `app/assets/javascripts/application.js` by default, add these lines:
+I'm lazy and have set this up for the asset pipeline only.  If you'd like to backport it, send me a merge request and i'll gladly add it.
+
 
 ```js
-//= require jquery
-//= require jquery_ujs
+//= require jquery-ui-timepicker/jquery-ui-sliderAccess
 ```
 
-For jQuery UI, we recommend the [jquery-ui-rails](https://github.com/joliss/jquery-ui-rails) gem, as it includes the jquery-ui css and allows easier customization. This gem still packages the jQuery UI javascript for compatibility. To use it, add the following line to your `application.js`:
+You obviously need the [jquery-ui-rails](https://github.com/joliss/jquery-ui-rails) gem
+
+for the provided CSS add this to your css manifest file
 
 ```js
-//= require jquery-ui
+//= require query-ui-timepicker/jquery-ui-timepicker
 ```
 
-In order to use the themed parts of jQuery UI, you will also need to supply [your own theme CSS](http://jqueryui.com) (or use the jquery-ui-rails gem mentioned above).
 
-Just add
 
 Contributing Code - Please Read!
 --------------------------------
